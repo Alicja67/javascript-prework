@@ -1,5 +1,6 @@
 *, *::before, *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -43,9 +44,11 @@ body {
   line-height: 55px;
   font-size: 35px;
   background: #a0a0b1;
-  box-shadow: 5px 5px 15px 5px #beecae;
+  -webkit-box-shadow: 5px 5px 15px 5px #beecae;
+          box-shadow: 5px 5px 15px 5px #beecae;
   margin: 40px;
   border-radius: 5px;
+  -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
@@ -54,10 +57,12 @@ body {
 }
 
 .result {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: space-evenly;
-      justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   font-family: 'Roboto Slab', serif;
 }
 

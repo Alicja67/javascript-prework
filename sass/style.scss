@@ -1,0 +1,89 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.container {
+    height: 100vh;
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1522032662723-6649e699785f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.main-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+}
+
+.main-subtitle {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-top: 50px;
+    margin-top: 0;
+}
+
+.subtitle {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px
+}
+
+#buttons i {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 35px;
+    background: #a0a0b1;
+    box-shadow: 5px 5px 15px 5px #beecae;
+    margin: 40px;
+    border-radius: 5px;
+    transition: 0.5s all;
+}
+
+#buttons i:hover {
+    color: yellowgreen;
+}
+
+.result {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Roboto Slab', serif;
+
+    h3 {
+        margin: 0;
+    }
+}
+
+#messages {
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+}
+
+@media (max-width: 490px) {
+    #buttons i {
+        margin: 15px;
+    }
+
+    .main-title {
+        font-size: 2rem;
+    }
+
+    .main-subtitle {
+        font-size: 1rem;
+        padding-top: 20px;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+}

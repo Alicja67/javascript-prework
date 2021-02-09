@@ -1,20 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Kamień, papier, nożyce</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat:wght@400;700&family=Roboto+Slab&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 	<div class="container">
+		<h3 class="main-subtitle">Zagrajmy w grę!</h3>
+		<h1 class="main-title">Kamień Papier Nożyce</h1>
+		<p class="subtitle">Masz do wybory 3 opcje poniżej.<br> Wybierz jedną z nich i przekonaj się czy wygrasz z
+			komputerem.</p>
 		<div id="buttons">
-			<button id="play-rock">Kamień</button>
-			<button id="play-paper">Papier</button>
-			<button id="play-scissors">Nożyce</button>
+			<i id="play-rock" class="fas fa-hand-rock"></i>
+			<i id="play-paper" class="fas fa-hand-paper"></i>
+			<i id="play-scissors" class="fas fa-hand-scissors"></i>
+		</div>
+		<div class="result">
+			<div class="player">
+				<h3>Player</h3>
+				<span id="scorePlayer">0</span>
+			</div>
+			<div class="computer">
+				<h3>Computer</h3>
+				<span id="scoreComputer">0</span>
+			</div>
 		</div>
 		<div id="messages"></div>
 	</div>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
 </body>
+
 </html>
